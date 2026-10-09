@@ -1,0 +1,108 @@
+:root {
+   --Obsidian: #0b0b0b;
+   --Charcoal: #151515;
+   --Bone: #e8e6df;
+   --Ash: #8a8a8a;
+   --BloodRed: #c1121f;
+   --DeepRed: #78000f;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: var(--Obsidian);
+}
+.toxic-logo img {
+   width: 60px;
+   height: auto;
+}
+.toxic-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--Obsidian);
+   gap: 10px;
+   padding: 10px 0 10px 0;
+}
+
+.toxic-logo h1 {
+   font-size: 50px;
+   color: var(--BloodRed);
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   letter-spacing: 6px;
+}
+
+.toxic-motivation {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+   height: 100vh;
+}
+
+.quote-btn {
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--Charcoal);
+}
+
+.toxic-quote p {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 30px;
+   color: var(--Bone);
+   max-width: 650px;
+   border: var(--Ash) 2px solid;
+   margin: 40px auto 40px auto;
+   border-radius: 20px;
+   padding: 20px;
+}
+.next-fav {
+   display: flex;
+   gap: 20px;
+}
+
+#next-btn,
+#fav-btn {
+   background-color: var(--BloodRed);
+   border: none;
+   width: 170px;
+   height: 45px;
+   border-radius: 100px;
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 20px;
+   color: var(--Bone);
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s ease;
+}
+
+#next-btn img {
+   width: 25px;
+   height: auto;
+   padding-top: 2px;
+}
+#fav-btn img {
+   width: 25px;
+   height: auto;
+   padding-top: 2px;
+}
+
+#next-btn:hover,
+#fav-btn:hover {
+   background-color: var(--DeepRed);
+   cursor: pointer;
+}
+#next-btn:active,#fav-btn:active{
+   background-color:rgb(63, 0, 0);
+}
